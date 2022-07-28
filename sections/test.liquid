@@ -1,0 +1,38 @@
+<p class="text">{{ section.settings.message }}</p>
+<button id='btnTest'>Click</button>
+{%- style -%}
+  .text {
+    color: {{ section.settings.color_text }};
+  }
+{%- endstyle -%}
+
+{% schema %}
+  {
+    "name": "t:sections.test.name",
+    "settings": [
+    {
+      "type": "text",
+      "id": "message",
+      "label": "Message",
+      "default": "Hello World!"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "color",
+      "default": "#999999"
+    }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+{% javascript %}
+let btnText = document.querySelector('#btnTest');
+btnText.addEventListener('click', () => {
+  alert(true)
+});
+{% endjavascript %}
