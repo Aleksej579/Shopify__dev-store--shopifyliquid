@@ -121,7 +121,7 @@
     "16593817333cfbcd25": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{ product.metafields.custom.country }}",
+        "custom_liquid": "{% if product.metafields.custom.country != blank %}\n<p> Made in: {{ product.metafields.custom.country }}<\/p>\n{% endif %}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
