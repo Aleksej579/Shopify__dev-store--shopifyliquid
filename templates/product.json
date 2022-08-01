@@ -90,6 +90,12 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "7bcda77e-4072-4d31-8902-2076558547a4": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.country != blank %}\n<p> Made in: {{ product.metafields.custom.country }}<\/p>\n{% endif %}"
+          }
         }
       },
       "block_order": [
@@ -105,7 +111,8 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "7bcda77e-4072-4d31-8902-2076558547a4"
       ],
       "settings": {
         "enable_sticky_info": true,
