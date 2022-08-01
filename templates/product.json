@@ -27,6 +27,12 @@
           "settings": {
           }
         },
+        "7bcda77e-4072-4d31-8902-2076558547a4": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.country != blank %}\n<p> Made in: {{ product.metafields.custom.country }}<\/p>\n{% endif %}"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -90,12 +96,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "7bcda77e-4072-4d31-8902-2076558547a4": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% if product.metafields.custom.country != blank %}\n<p> Made in: {{ product.metafields.custom.country }}<\/p>\n{% endif %}"
-          }
         }
       },
       "block_order": [
@@ -103,6 +103,7 @@
         "title",
         "caption",
         "price",
+        "7bcda77e-4072-4d31-8902-2076558547a4",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -111,8 +112,7 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share",
-        "7bcda77e-4072-4d31-8902-2076558547a4"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
